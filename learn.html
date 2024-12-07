@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn English Topics</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Learn English Basics</h1>
+    <p>Select a topic to start learning!</p>
+  </header>
+
+  <main class="main-content">
+    <section class="topics">
+      <div class="topic-card" id="fruits">
+        <h2>Fruits</h2>
+        <p>Learn about different fruits and their names.</p>
+        <button class="start-button-learn">Start</button>
+      </div>
+      <div class="topic-card" id="animals">
+        <h2>Animals</h2>
+        <p>Discover animals and their sounds.</p>
+        <button class="start-button-learn">Start</button>
+      </div>
+      <div class="topic-card" id="verbs">
+        <h2>Verbs</h2>
+        <p>Learn basic action words used daily.</p>
+        <button class="start-button-learn">Start</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 LMS for Kids. All rights reserved.</p>
+    <a href="home.html" class="back-button">&larr; Back to Home</a>
+  </footer>
+
+ 
+</body>
+<script>
+    document.querySelectorAll('.start-button-learn').forEach(button => {
+    button.addEventListener('click', function () {
+      const topic = this.parentElement.id; // Get the topic ID
+      window.location.href = `${topic}.html`; // Redirect to the specific video page
+    });
+  });
+  
+</script>
+</html>

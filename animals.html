@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn About Animals</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Learn About Animals</h1>
+    <p>Watch the video to learn about animals!</p>
+  </header>
+
+  <main class="main-content">
+    <video controls width="640">
+      <source src="videos/Wild animals for kids - Vocabulary for kids.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <section class="topics">
+        <div class="topic-card" id="race-game">
+          <button class="start-button" >Play Race Game</button>
+        </div>
+        <div class="topic-card" id="sentence-game">
+          <button class="start-button" >Play Complete the Sentence</button>
+        </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 LMS for Kids. All rights reserved.</p>
+    <a href="learn.html" class="back-button">&larr; Back to Topics</a>
+  </footer>
+</body>
+<script>
+    document.querySelectorAll('.start-button').forEach(button => {
+      button.addEventListener('click', function () {
+        const gameType = this.parentElement.id; //sentence , race
+        window.location.href = `${gameType}-animals.html`; // Redirect with the topic
+      });
+    });
+    
+    </script>
+</html>

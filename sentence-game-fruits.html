@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete the Sentence - Fruits</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Complete the Sentence: Fruits</h1>
+    <p>Click the correct word to complete the sentence!</p>
+  </header>
+  <audio id="correct-audio" src="audio/correct-6033.mp3" style="display: none;" ></audio>
+  <audio id="wrong-audio" src="audio/wrong-buzzer-6268.mp3" style="display: none;"></audio> 
+  <main class="main-content">
+    <div class="sentence-game">
+      <p id="question-text">
+
+      </p>
+      <div class="options" id="options-container">
+        <!-- Options will be dynamically added here -->
+      </div>
+    </div>
+    <button id="check-button">Check Answer</button>
+    <p id="result-message"></p>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 LMS for Kids. All rights reserved.</p>
+    <a href="fruits.html" class="back-button">&larr; Back to Learn</a>
+
+  </footer>
+
+  <script src="sentence-game-fruits.js">
+   
+  </script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px;
+    background-color: #64ec64;
+    color: white;
+  }
+  
+  .header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1.2em;
+  }
+  
+  .main-content {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .intro {
+    margin: 20px 0;
+  }
+  
+  .intro-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .learn-button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .learn-button:hover {
+    background-color: #e64a19;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #64ec64;
+    color: white;
+  }
+
+  .topics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .topic-card {
+    background-color: white;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    width: 250px;
+    height: 170px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .topic-card h2 {
+    color: #4caf50;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .topic-card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+  .start-button {
+    background-color: #4570ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 100px;
+  }
+  .start-button-learn {
+    background-color:  #4570ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .start-button:hover {
+    background-color: #4570ffe1;
+  }
+  
+  .sentence-game {
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .drop-zone {
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    border: 2px dashed #4caf50;
+    margin: 0 5px;
+    vertical-align: middle;
+  }
+  
+  .options {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .draggable {
+    padding: 10px 15px;
+    background-color: #ff5722;
+    color: white;
+    border-radius: 5px;
+    cursor: grab;
+    text-align: center;
+  }
+  
+  .draggable:hover {
+    background-color: #e64a19;
+  }
+  
+  .draggable:active {
+    cursor: grabbing;
+  }
+
+  /* styles.css */
+
+
+
+/* Main content */
+.main-content {
+  text-align: center;
+  padding: 30px;
+}
+
+.sentence-game {
+  margin-bottom: 20px;
+}
+
+#question-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.drop-zone {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  background-color: #e0e0e0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.option-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option-button:hover {
+  background-color: #45a049;
+}
+
+.option-button:active {
+  background-color: #3e8e41;
+}
+
+/* Result message */
+#result-message {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#check-button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#check-button:hover {
+  background-color: #e64a19;
+}
+
+
+
+/* Mobile-friendly adjustments */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .option-button {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+  }
+
+  #check-button {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+
+  .drop-zone {
+    width: 120px;
+    height: 35px;
+  }
+}
+
+.main-content-race {
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-image: url('images/ebb6723a-083d-442d-a403-245866022976.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 130vh;
+}
+
+#question-image{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center; /* Centers horizontally */
+  text-align: center; /* Optional: Centers text in the container */
+}
+.images-container {
+  position: relative;
+}
+.question-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center; /* Centers horizontally */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Optional: Centers text in the container */
+}
+
+#horse-image {
+  position: relative; /* Fixes the image to the viewport */
+  left: 0%; /* Centers the image horizontally */
+  width: 250px;
+  height: auto; /* Keeps the aspect ratio */
+}
+.shiftable-image {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  transition: left 0.5s ease; /* Smooth transition for the shift */
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#right-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.choice {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.choice-img  {
+    width: 150px;
+    height: 150px;
+    background-size:contain;
+    background-position: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+    background-repeat: no-repeat;
+}
+#score {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#race-game{
+  background-image: url('images/ebb6723a-083d-442d-a403-245866022976.jpg');
+  background-size: cover;
+}
+#sentence-game{
+  background-image: url('images/complete-sentence.png');
+  background-size: cover;
+}
+

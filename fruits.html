@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn About Fruits</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Learn About Fruits</h1>
+    <p>Watch the video to learn about fruits!</p>
+  </header>
+
+  <main class="main-content">
+    <video controls width="640">
+    <source src="videos/Fruits and Vegetables Names - Learn Fruits And Vegetables English Vocabulary.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <section class="topics">
+      <div class="topic-card" id="race-game">
+        <button class="start-button" >Play Race Game</button>
+      </div>
+      <div class="topic-card" id="sentence-game">
+        <button class="start-button" >Play Complete the Sentence</button>
+      </div>
+  </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 LMS for Kids. All rights reserved.</p>
+    <a href="learn.html" class="back-button">&larr; Back to Topics</a>
+  </footer>
+<script>
+const topicCards = document.querySelectorAll('.topic-card');
+
+// Add click event listener to each card
+topicCards.forEach(card => {
+  card.addEventListener('click', () => {
+    const cardId = card.id; // Get the ID of the clicked card
+    window.location.href = `${cardId}-fruits.html`;
+
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Race Game - Animals</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Race Game: Animals</h1>
+    <p>Answer the question correctly to move forward!</p>
+  </header>
+  <audio id="correct-audio" src="audio/correct-6033.mp3" style="display: none;" ></audio>
+  <audio id="wrong-audio" src="audio/wrong-buzzer-6268.mp3" style="display: none;"></audio> 
+  <!-- Images before main content -->
+  <main class="main-content-race">
+      <div class="question-box">
+        <img id="question-image" alt="Question image" />
+        <audio id="question-audio" controls ></audio> <!-- Hidden by default -->
+        <div class="choices">
+          <button class="choice-img"></button>
+          <button class="choice-img"></button>
+          <button class="choice-img"></button>
+          <button class="choice-img"></button>
+        </div>
+      <!-- Score display -->
+      <p id="score">Score: 0</p>
+    </div>
+    
+    <button id="right-button" hidden>Move Image Right</button> <!-- Button to move the image -->
+    <img src="images/bb30e072-9ebc-462d-8588-5357fb2f9fa2-removebg-preview.png" id="horse-image" alt="horse image" />
+  </main>
+  <footer class="footer">
+    <p>&copy; 2024 LMS for Kids. All rights reserved.</p>
+    <a href="animals.html" class="back-button">&larr; Back to Learn</a>
+  </footer>
+  <script src="race-game-animals.js"></script>
+
+</body>
+</html>
+
+
+
+
+
